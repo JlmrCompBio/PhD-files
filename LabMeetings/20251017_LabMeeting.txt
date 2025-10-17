@@ -1,0 +1,29 @@
+Camila:
+New PhD student
+Working on:
+  - virtual screening on large scale --> Gabi and Veronika
+
+Lucas:
+Brasilian PhD
+working on:
+  - ABCG2 --> virtual screening, find novel inhibitors
+  - docking now, perhaps experimental later
+
+Arthur:
+next steps:
+  - ABCG2 enhanced sampling --> for next time: what you wanna do, what to test
+
+Gabi:
+workin ong:
+  - FabI --> docking for e. coli, s. aureus are running
+  - tranditional ML --> does not allow for batch training; perhaps incremental learning?
+  - experimental part --> transformation with low plasmid conc. not worked. 
+
+Philip:
+finished:
+  - papers revision
+working on:
+  - tables --> mutation, domains
+
+Thales:
+  - Vinicius coming
