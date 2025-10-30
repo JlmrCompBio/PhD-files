@@ -1,0 +1,15 @@
+Arthur:
+
+OBSERVATIONS:
+ - There are two compounds that increase ATP hydrolysis --> no explanation for this --> maybe the protein gets stucked in the outward conformation?
+ - Using ketMD --> the most promising setup was substrate+Mg2+ATP for observing transitions
+ - From papers: there are already some distances and descriptors defined --> iScience and ketMD papers
+ - Do substrates have a characteristic binding pose?
+   - Arthur's hypothesis form simulaionts:
+     - Inhibitors --> orient perpendicularly to the transport axis
+     - Substrates --> orient aligned with the transport axis
+     - But, does this hold also in crystal structures?
+
+TO DO:
+  - Enhanced sampling for the substrate+Mg+ATP setup
+  - Data base with substrates
