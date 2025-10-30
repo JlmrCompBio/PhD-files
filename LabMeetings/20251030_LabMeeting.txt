@@ -1,0 +1,31 @@
+Arthur's presentation about ABCG2:
+
+SO FAR:
+- pdb: only inward facing when no substrate
+- outward facing: ATP+Mg but also mutants --> which one is more important? --> probably ATP+Mg
+- Simulations: 1 microsecond, no conf. change
+- Two compounds increase ATPs activity, but still are inhibitors
+    - ATP hydrolysis is actually the driving force for the opening
+
+
+PROBLEMS:
+- The expected effects happen when the protein changes the conformation
+- No explanation for why the two compunds inhibit but still cause ATP hydrolysis
+
+OPEN QUESTIONS:
+- substrate --> characteristic binding mode?
+  - Observations from simulations:
+    - substrate --> vertical orientation
+    - inhibitor --> horizontal orientation
+  - In crystal structures too?
+  
+
+FROM PAPERS
+- IScience: phenylalanine triade
+  - also some general descriptors --> Arthur idea: use them to evaluate the effect of the different ligands.
+
+
+PROPOSALS:
+- Kinetically enhanced MD (ketMD)
+  - to sample the transition: substrate + ATP + Mg2+
+- Maybe the protien is stucked in the outward facing conformation?
