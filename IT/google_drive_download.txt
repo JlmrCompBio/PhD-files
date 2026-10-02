@@ -1,10 +1,11 @@
 To download stuff from Google Drive from the comman line:
 1) Install rclone
-2) rclone config:
+2) Configure a google client: https://rclone.org/drive/#making-your-own-client-id
+3) rclone config:
   --> n = new
   --> name for example as 'gdrive'
   --> setup root directory and permissions
-3) Command to dowonload things: 
+4) Command to dowonload things: 
     rclone copy gdrive: \
   --drive-root-folder-id 1cIj4VWaVwDhj-XAk9LFJ8W6819QJ0GCW \
   --include "*.zip" \
