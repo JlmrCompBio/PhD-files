@@ -1,0 +1,34 @@
+On LUMI, can you try this:
+
+module load /appl/local/csc/modulefiles
+gromacs/.cph-cpu
+
+The module is hidden, ergo the dot in front of the module version. This version is not compatible with AMD GPUs, unfortunately, so on LUMI you must run it on CPUs.
+
+To install it on Roihu-CPU yourself, please try:
+
+cd $TMPDIR
+git clone https://gitlab.com/gromacs-constantph/constantph.git
+cd constantph/gromacs-constantph/
+
+mkdir build
+cd build
+
+module reset
+module load fftw
+
+# Currently Loaded Modules should be:
+#  1) csc-tools/default (S)   4) openmpi/5.0.10    7) fftw/3.3.10
+#  2) gcc/15.2.0              5) openblas/0.3.30
+#  3) ucx/1.20.0              6) StdEnv
+
+cmake .. \
+    -DCMAKE_INSTALL_PREFIX=/projappl/project_20xxxxx/gmx-cph \
+    -DGMX_MPI=ON \
+    -DGMX_OPENMP=ON \
+    -DGMX_BUILD_OWN_FFTW=OFF \
+    -DGMX_EXTERNAL_BLAS=ON \
+    -DCMAKE_CXX_FLAGS="-include cstdlib -include cstdint"
+
+make
+make install
